@@ -59,7 +59,7 @@ function sendTextMessage(sender, text) {
 	sendRequest()
 }
 
-sendRequest(){
+function sendRequest(){
 	request({
 		url: 'https://graph.facebook.com/v2.6/me/messages',
 		qs: {access_token:token},
