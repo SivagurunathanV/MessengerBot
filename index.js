@@ -152,6 +152,7 @@ function sendScoreMessage(sender){
 
 
 	}
+	sendRequest()
 
 }
 
