@@ -116,9 +116,9 @@ function sendScoreMessage(sender){
 
 	messageData = {
 		"attachment": {
-			"type": "score",
+			"type": "template",
 			"payload": {
-				"template_type": "generic",
+				"template_type": "SCORE",
 				"elements": [{
 					"title": "Cricket",
 					"subtitle": "cricket score",
