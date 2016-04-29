@@ -118,7 +118,7 @@ function sendScoreMessage(sender){
 		"attachment": {
 			"type": "template",
 			"payload": {
-				"template_type": "SCORE",
+				"template_type": "generic",
 				"elements": [{
 					"title": "Cricket",
 					"subtitle": "cricket score",
