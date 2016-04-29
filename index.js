@@ -39,7 +39,6 @@ app.post('/webhook/', function (req, res) {
 			if(text === 'Score'){
 				sendScoreMessage(sender)
 			}
-			sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
 		}
 		if (event.postback) {
 			text = JSON.stringify(event.postback)
