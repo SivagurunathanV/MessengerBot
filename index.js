@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 // index
 app.get('/', function (req, res) {
-	res.send('hello world i am a secret bot')
+	res.send('hello world')
 })
 
 // for facebook verification
@@ -110,6 +110,49 @@ function sendGenericMessage(sender) {
 		}
 	}
 	sendRequest()
+}
+
+
+function sendScoreMessage(sender){
+
+	messageData = {
+		"attachment": {
+			"type": "score",
+			"payload": {
+				"template_type": "generic",
+				"elements": [{
+					"title": "Cricket",
+					"subtitle": "cricket score",
+					"image_url": "https://www.google.co.in/imgres?imgurl=http%3A%2F%2Fcricfrog.com%2Fwp-content%2Fuploads%2F2015%2F12%2FToday-Cricket-Match-Prediction.jpg&imgrefurl=http%3A%2F%2Fcricfrog.com%2Ftag%2Fcricket-prediction-2016%2F&docid=oDNL94TCSzElNM&tbnid=Yz4H4LIAbzq45M%3A&w=1260&h=840&bih=702&biw=1280&ved=0ahUKEwjUkYzW8bLMAhXXA44KHSoTDWAQMwg2KAUwBQ&iact=mrc&uact=8",
+					"buttons": [{
+						"type": "web_url",
+						"url": "https://www.google.co.in/webhp?hl=en#hl=en&q=cricket+score",
+						"title": "web url"
+					}, {
+						"type": "postback",
+						"title": "Postback",
+						"payload": "Payload for first element in a generic bubble",
+					}],
+				}, {
+					"title": "IPL",
+					"subtitle": "IPL SCORE",
+					"image_url": "https://www.google.co.in/imgres?imgurl=http%3A%2F%2Fbsmedia.business-standard.com%2F_media%2Fbs%2Fimg%2Farticle%2F2015-12%2F15%2Ffull%2F1450165039-9395.jpg&imgrefurl=http%3A%2F%2Fwww.business-standard.com%2Farticle%2Fcurrent-affairs%2Fipl-team-owners-on-a-rough-pitch-116031500014_1.html&docid=6t6Avr7GjUlY7M&tbnid=LnulN3i6Jw7V-M%3A&w=620&h=464&bih=702&biw=1280&ved=0ahUKEwiMp8bj8bLMAhWTBo4KHQLkDUQQMwg1KAUwBQ&iact=mrc&uact=8",
+					"buttons": [{
+						"type": "web_url",
+						"url": "https://www.google.co.in/webhp?hl=en#hl=en&q=cricket+score",
+						"title": "web url"
+					}, {
+						"type": "postback",
+						"title": "Postback",
+						"payload": "Payload for second element in a generic bubble",
+					}],
+				}]
+			}
+		}
+
+
+	}
+
 }
 
 // spin spin sugar
