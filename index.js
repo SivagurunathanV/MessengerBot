@@ -122,7 +122,7 @@ function sendScoreMessage(sender){
 				"elements": [{
 					"title": "Cricket",
 					"subtitle": "cricket score",
-					"image_url": "https://www.google.co.in/imgres?imgurl=http%3A%2F%2Fcricfrog.com%2Fwp-content%2Fuploads%2F2015%2F12%2FToday-Cricket-Match-Prediction.jpg&imgrefurl=http%3A%2F%2Fcricfrog.com%2Ftag%2Fcricket-prediction-2016%2F&docid=oDNL94TCSzElNM&tbnid=Yz4H4LIAbzq45M%3A&w=1260&h=840&bih=702&biw=1280&ved=0ahUKEwjUkYzW8bLMAhXXA44KHSoTDWAQMwg2KAUwBQ&iact=mrc&uact=8",
+					"image_url": "http://www.blacktownpssa.com/cricket_bat_and_ball.jpg",
 					"buttons": [{
 						"type": "web_url",
 						"url": "https://www.google.co.in/webhp?hl=en#hl=en&q=cricket+score",
