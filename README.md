@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 Creating your own Facebook Messenger bot
 
 ![Alt text](/demo/Demo.gif)
@@ -306,3 +307,6 @@ You can also design Messenger bots in Sketch with the [Bots UI Kit](https://bots
 ## How I can help
 
 I build and design bots all day. Email me for help!
+=======
+# MessengerBot
+>>>>>>> 0749a54fe2459d2274e0a48f0796e826e303aaeb
